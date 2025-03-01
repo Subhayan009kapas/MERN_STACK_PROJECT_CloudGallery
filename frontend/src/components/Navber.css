@@ -1,0 +1,88 @@
+/* Glass Effect for Navbar */
+.navbar {
+          width: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          background: rgba(35, 34, 34, 0.7); /* Dark, semi-transparent background */
+          backdrop-filter: blur(10px); /* Glass effect */
+          color: #ffffff;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          z-index: 1000;
+          overflow: hidden;
+          box-sizing: border-box;
+        }
+        
+        /* Navbar heading */
+        .navbar h2 {
+          font-size: 24px;
+          margin: 0;
+          white-space: nowrap;
+        }
+        
+        /* Styled username with background */
+        .navbar-user {
+          position: relative;
+          cursor: pointer;
+          color: #ffffff;
+          background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+          padding: 8px 12px;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: background 0.3s;
+          max-width: 120px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        
+        .navbar-user:hover {
+          background: rgba(255, 255, 255, 0.3); /* Lighter background on hover */
+        }
+        
+        /* Dropdown for logout */
+        .dropdown {
+          position:relative;
+          top: 110%; /* Position directly below username */
+          right: 0;
+          margin-top: 5px;
+          background-color: rgba(227, 228, 240, 0.9); /* Dark, semi-transparent */
+          backdrop-filter: blur(10px); /* Glass effect */
+          border-radius: 8px;
+          padding: 15px 20px;
+          color: #ffffff;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 200px;
+          text-align: center;
+          z-index: 20;
+          
+        }
+        
+        .dropdown h3 {
+          margin: 0 0 10px;
+          font-size: 18px;
+          color: #f0f0f0;
+        }
+        
+        .dropdown button {
+          background: #d9534f;
+          border: none;
+          color: #ffffff;
+          font-size: 16px;
+          padding: 8px 12px;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+        }
+        
+        .dropdown button:hover {
+          background: #c9302c;
+        }
+        
